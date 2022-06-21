@@ -103,9 +103,10 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                 database.mainDAO().insert(new_notes);
                 notes_list.clear();
                 notes_list.addAll(database.mainDAO().getAll());
-                Toast.makeText(getApplicationContext(), Integer.toString(notes_list.size()), Toast.LENGTH_SHORT).show();
-
-                Toast.makeText(this, "ID="+Integer.toString(notes_list.get(notes_list.size()-1).getID()), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), Integer.toString(notes_list.size()), Toast.LENGTH_SHORT).show();
+//
+//                Toast.makeText(this, "ID="+Integer.toString(notes_list.get(notes_list.size()-1).getID()), Toast.LENGTH_SHORT).show();
+//
                 notesListAdapter.notifyDataSetChanged();
 
             }
